@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Fredoka+One&family=Montserrat+Alternates&display=swap');
+body{
+    background-color: #232323;
+    margin: 0;
+    font-family: 'Comfortaa', cursive;
+}
+.square{
+    background-color: purple;
+    width: 30%;
+    margin : 1.66%;
+    float: left;
+    padding-bottom: 30%;
+    border-radius: 10%;
+    transition: background 0.6s;
+}
+
+#container{
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+h1{
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-weight: normal;
+    font-size: 25px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding: 10px 0;
+    transition: background 0.5s;
+}
+
+#stripe{
+    color: black;
+    background-color: white;
+    text-align: center;
+    height: 30px;
+}
+
+.selected{
+    background-color: steelblue;
+    color: white;
+    transition: all 0.5s;
+}
+#colorDisplay{
+    font-weight: 1000;
+    font-size: 150%;
+    letter-spacing: 5px;
+}
+#message{
+    font-weight: 1000;
+    display: inline-block;
+    width: 20%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    transition: all 0.3s;
+}
+#message.shake {
+  animation: shake-animation 5s ease-in-out infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  1.78571% { transform:translate(5px,0) }
+  3.57143% { transform:translate(0,0) }
+  5.35714% { transform:translate(5px,0) }
+  7.14286% { transform:translate(0,0) }
+  8.92857% { transform:translate(5px,0) }
+  10.71429% { transform:translate(0,0) }
+  100% { transform:translate(0,0) }
+}
+button{
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: 'Fredoka One', cursive;;
+    letter-spacing: 1px;
+    color: steelblue;
+    transition: all 0.5s;
+	outline-width: 0;
+}
+button:hover{
+    color: white;
+    background: steelblue;
+}
